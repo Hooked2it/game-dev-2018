@@ -1,0 +1,27 @@
+﻿<h2 align=center>loops by Ethan</h2>
+
+x = <input id= type=text value=1000 size=10><br>
+
+<input type=button value="loop"onclick="{
+mytemp=''
+myinput=document.getElementById('mytext01').value
+
+var myminutes=new date();
+mytemp += myminutes.getminutes() + 'min<br>'
+
+for (myloop = 1; myloop <= myinput; my loop ++){
+
+mytemp += myloop + ',' + myinput + '<br>'
+
+}
+
+var myminutes2=new date();
+mytotal=(myminutes2-myminutes)/1000
+
+mytemp += myminutes2.getminutes() + 'min <br> duration = ' +
+mytotal + ' seconds<br>'
+
+document.getElementById('mydiv01').innerHTML = mytemp
+}">
+
+<div id="mydiv01"></div><br>
