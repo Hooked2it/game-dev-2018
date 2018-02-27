@@ -1,0 +1,35 @@
+﻿<script>
+function myCheckKeys(event){
+  
+   document.getElementById('myDiv01').innerHTML += 
+	String.fromCharCode(event.keyCode)
+
+	if (String.fromCharCode(event.keyCode) == 'A') {
+
+ 	document.getElementById('myAnswer').value =
+ parseFloat(document.getElementById('myInput1').value)+
+
+ parseFloat(document.getElementById('myInput2').value)
+
+}
+
+//Your if statements here
+
+}
+</script>
+<body onKeyDown="{myCheckKeys(event)}">
+
+
+<h2 align=center>Storage and keydown by Ethan</h2>
+
+A floating point number
+<input id="myInput"type=text value=3.16>
+<input id="myInput"type=text value=3.16> =
+<input id="myAnswer"type=text><br>
+
+
+
+Type"A" to multiple them. You make text box for I=Integers,
+B=Boolean, C=Char and S=String
+
+<div id="myDiv01">...</div> <br>
