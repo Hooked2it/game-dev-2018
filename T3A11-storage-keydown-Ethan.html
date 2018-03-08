@@ -27,6 +27,24 @@ A floating point number
 <input id="myInput"type=text value=3.16> =
 <input id="myAnswer"type=text><br>
 
+<select onChange="{
+
+if (this.value) {
+document.getElementById('myDiv01').innerHTML += 'That was true
+
+	}else{
+
+document.getElementById('myDiv01').innerHTML += 'That was false'
+
+	}
+
+}"><br><br>
+
+<option>
+<option value="true">True
+<option value="false">False
+</select>
+
 
 
 Type"A" to multiple them. You make text box for I=Integers,

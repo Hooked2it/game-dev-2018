@@ -1,0 +1,48 @@
+﻿<h2 align=center>Arays by Ethan</h2>
+First button sets and shows the myStuff array.<br>
+First button sets and shows the myRandom array.<br>
+
+<input type=button value="Run myStuff" onclick="
+//alert(Math.floor( Math.random()*9+1)  )
+
+	myStuff=new Array()
+	myStuff[0]='Cell Phone'
+	myStuff[1]='Shoes'
+	myStuff[2]='Coat'
+	myStuff[3]='Keys'
+	myStuff[4]='Shelf'
+	myStuff[5]='Bed'
+	myStuff[6]='Computer'
+	myStuff[7]='Console'
+   
+	for (myLoop=0; myLoop <= 7; myLoop++ ){
+	document.getElementById('myDiv01').innerHTML += myStuff[myLoop] +' <br>'
+       }
+"><br><br>
+
+<input type=text id="myText01" value=3><br>
+<input type=button value="Run myRandom" onclick="
+alert()
+
+"><br>
+
+<div id="myDiv01"></div>
+
+
+
+Loop this amount <input type=text id="myText01" value=5><br>
+<input type=button value="Run myRandom" onclick="
+
+	myRandomNumber=new array()
+
+	// you make a for loop here
+
+	myRandomNumber[0]=Math.floor(Math.random()*9+1)
+
+	// you make another for loop here
+
+	document.getElementById('myDiv02').innerHTML += myRandomNumber[0]+' <br>'
+
+"><br>
+
+<div id="myDiv02"></div>
