@@ -1,0 +1,98 @@
+﻿<h2 align=center> Console commands by Ethan</h2>
+Ctrl-Shift-I to activate console<br><br>
+
+Reference info at this link
+<a
+href="https://medium.com/appsflyer/10-tips-for-javascript-debugging-like-a-pro-with-console-7140027eb5f6">
+https://medium.com/appsflyer/10-tips-for-javascript-debugging-like-a-pro-with-console-7140027eb5f6</a><br>
+
+<br>
+or<br>
+<a
+href="http://devtoolsecrets.com/secret/console-log-info-warn-erroe.html">
+http://devtoolsecrets.com/secret/console-log-info-warn-error.html</a><br>
+
+
+<input type=button value="console.log" onclick="{
+	console.log('Hello Console')
+}"><br><br>
+
+
+<input type=button value="console.info" onclick="{
+	console.info('%cWow','color:green; background-color:yellow');
+}"><br><br>
+
+
+<input type=button value="console.error" onclick="{
+	console.error('an error')
+}"><br><br>
+
+
+<input type=button value="variables" onclick="{
+	console.log('The calling type'+this.type)
+}"><br><br>
+
+
+<input type=button value="console.trace" onclick="{
+	console.trace()
+}"><br><br>
+
+
+<input type=button value="console.time" onclick="{
+	console.time('Test loop')
+	for(x=0; x<= 50000; x++){y=x}
+	console.timeEnd('Test loop')
+}"><br><br>
+
+
+<input type=button value="console.memory" onclick="{
+	console.error(console.memory)
+}"><br><br>
+
+
+<input type=button value="console.profile" onclick="{
+	console.profile('Test profile')
+	// do stuff and see if it ends
+	console.profileEnd('Test profile')
+}"><br><br>
+
+
+<input type=button value="console.assert(true)" onclick="{
+	console.assert(true, 'do not log this')
+}"><br><br>
+
+
+<input type=button value="console.assert(false)" onclick="{
+	console.assert(false,'Log this')
+}"><br><br>
+
+
+<input type=button value="console.group" onclick="{
+	console.group('1')
+	console.group('2')
+	console.groupEnd('2')
+	console.groupEnd('1')
+}"><br><br>
+
+
+
+<input type=button value="console.count" onclick="{
+for (myLoop=0; myLoop<=4; myLoop++){
+	console.count('Counting')
+ }
+}"><br><br>
+
+
+
+<input type=button value="console.clear" onclick="{
+	console.clear()
+}"><br><br>
+
+
+<input type=button value="console.table" onclick="{
+	for (myLoop=0; myLoop<=169; myLoop++){
+	console.table([{name:'Ethan', age:myLoop}])
+   }
+}"><br><br><br><br>
+
+
